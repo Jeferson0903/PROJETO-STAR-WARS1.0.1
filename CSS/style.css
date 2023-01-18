@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../image/star-wars.png");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 400;
+}
+
+header{
+    background: linear-gradient(180deg, #121212 0%, #cd342e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5.5rem 6.25rem;
+}
+
+.logo{
+    height: 10rem;
+    width: 15rem;
+}
+
+.card{
+    background: #504e4d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 18rem;
+
+}
+    
+.card > h1{
+    color: white;
+}
+
+.imageMain{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.imageMain img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.infoMain{
+    background: rgb(211, 231, 218);
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.infoMain:hover{
+    background: #f3f358;
+}
+.infoMain > h2{
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+.infoMain h3{
+    font-size: 0.7rem;
+
+    margin-bottom:0.5rem;
+    font-weight: 400;
+}
+.infoMain h3:hover{
+    font-size:1rem ;
+    font-weight: 900;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.cardsMain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    margin: 5rem 6.25rem;
+}
+
+@media (max-width:1120px){
+    .cardsMain{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:890px){
+    .cardsMain{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5rem 1rem;
+    }
+    header{
+        padding: 5rem 1rem;
+    }
+
+    header > h1{
+        font-size: 1.5rem;
+    }
+}
